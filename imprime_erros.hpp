@@ -1,3 +1,3 @@
 #pragma once
 
-void imprime_cabecalho();
+void imprime_erros();
