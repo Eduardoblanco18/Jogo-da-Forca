@@ -1,0 +1,21 @@
+# Visual Studio (ESSAS LINHAS SÃO OBRIGATÓRIAS)
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Binários e pastas de build
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# Outros arquivos temporários
+*.vsidx
+*.db
+*.log
+Thumbs.db
+[Dd]esktop.ini
