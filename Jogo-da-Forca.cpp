@@ -5,6 +5,7 @@
 #include <fstream>
 #include <ctime>
 #include <cstdlib>
+#include <Windows.h>
 #include "nao_acertou.hpp"
 #include "letra_existe.hpp"
 #include "nao_enforcou.hpp"
@@ -24,6 +25,9 @@ map<char, bool> chutou;
 vector<char> chutes_errados;
 
 int main () {
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+
     imprime_cabecalho();
 
     sortea_palavra();
