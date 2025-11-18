@@ -1,4 +1,5 @@
 #include <vector>
+#include "nao_enforcou.hpp"
 
 std::vector<char> chutes_errados;
 

@@ -1,9 +1,8 @@
 #include <iostream>
-#include <vector>
 #include <fstream>
-#include <string>
+#include "le_arquivo.hpp"
 
-std::vector<std::string> le_arquivo(){
+std::vector<std::string> le_arquivo() {
     std::vector<std::string> palavras_arquivo;
     std::ifstream arquivo;
     arquivo.open("palavras.txt");

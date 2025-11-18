@@ -1,4 +1,5 @@
 #include <string>
+#include "letra_existe.hpp"
 
 std::string palavra_secreta;
 

@@ -2,11 +2,12 @@
 #include <string>
 #include <ctime>
 #include <cstdlib>
-#include "le_arquivo.cpp"
+#include "le_arquivo.hpp"
+#include "sortea_palavra.hpp"
 
 std::string palavra_secreta;
 
-void sortea_palavra(){
+void sortea_palavra() {
     std::vector<std::string> palavras =le_arquivo();
 
     srand(time(NULL));

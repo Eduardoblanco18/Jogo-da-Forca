@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "le_arquivo.cpp"
-#include "salva_arquivo.cpp"
+#include "le_arquivo.hpp"
+#include "salva_arquivo.hpp"
+#include "adiciona_palavra.hpp"
 
-void adiciona_palavra(){
+void adiciona_palavra() {
     std::cout << "Digite a nova palavra, usando letras maiúculas." << std::endl;
     std::string nova_palavra;
     std::cin >> nova_palavra;
