@@ -135,7 +135,6 @@
     <ClCompile Include="letra_existe.cpp" />
     <ClCompile Include="le_arquivo.cpp" />
     <ClCompile Include="nao_acertou.cpp" />
-    <ClCompile Include="nao_enforcou.cpp" />
     <ClCompile Include="salva_arquivo.cpp" />
     <ClCompile Include="sortea_palavra.cpp" />
   </ItemGroup>
@@ -148,7 +147,6 @@
     <ClInclude Include="letra_existe.hpp" />
     <ClInclude Include="le_arquivo.hpp" />
     <ClInclude Include="nao_acertou.hpp" />
-    <ClInclude Include="nao_enforcou.hpp" />
     <ClInclude Include="salva_arquivo.hpp" />
     <ClInclude Include="sortea_palavra.hpp" />
   </ItemGroup>

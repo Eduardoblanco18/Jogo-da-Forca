@@ -39,9 +39,6 @@
     <ClCompile Include="nao_acertou.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="nao_enforcou.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="salva_arquivo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -72,9 +69,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="nao_acertou.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="nao_enforcou.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="salva_arquivo.hpp">

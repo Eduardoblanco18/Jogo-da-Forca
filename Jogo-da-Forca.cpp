@@ -5,7 +5,6 @@
 #include <Windows.h>
 #include "nao_acertou.hpp"
 #include "letra_existe.hpp"
-#include "nao_enforcou.hpp"
 #include "imprime_cabecalho.hpp"
 #include "imprime_erros.hpp"
 #include "imprime_palavra.hpp"
@@ -27,21 +26,21 @@ int main () {
 
     imprime_cabecalho();
 
-    sortea_palavra();
+    palavra_secreta = sortea_palavra();
 
-    while(nao_acertou() && nao_enforcou()){
+    while(nao_acertou(palavra_secreta, chutou) && chutes_errados.size() < 5){
 
-        imprime_erros();
+        imprime_erros(chutes_errados);
 
-        imprime_palavra();
+        imprime_palavra(palavra_secreta, chutou);
         
-        chuta ();
+        chuta (&chutou, &chutes_errados);
     }
 
     cout << "Fim de jogo!" << endl;
     cout << "A palavra secreta era " << palavra_secreta << endl;
 
-    if(nao_acertou()){
+    if(nao_acertou(palavra_secreta, chutou)){
         cout << "Você perdeu! Tente novamente!";
     } else {
         cout << "Parabéns! Você acertou a palavra secreta!";
