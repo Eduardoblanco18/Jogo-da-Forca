@@ -2,9 +2,6 @@
 #include <string>
 #include <map>
 #include <vector>
-#include <fstream>
-#include <ctime>
-#include <cstdlib>
 #include <Windows.h>
 #include "nao_acertou.hpp"
 #include "letra_existe.hpp"

@@ -21,9 +21,6 @@
     <ClCompile Include="chuta.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="imprime_cabecalho.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="imprime_erros.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
