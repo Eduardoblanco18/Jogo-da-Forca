@@ -34,7 +34,7 @@ int main () {
 
         imprime_palavra(palavra_secreta, chutou);
         
-        chuta (&chutou, &chutes_errados);
+        chuta (chutou, chutes_errados);
     }
 
     cout << "Fim de jogo!" << endl;
