@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include <vector>
+#include <array>
 #include <Windows.h>
 #include "nao_acertou.hpp"
 #include "letra_existe.hpp"
@@ -18,7 +18,8 @@ using namespace std;
 
 static string palavra_secreta;
 static map<char, bool> chutou;
-static vector<char> chutes_errados;
+static array<char, 5> chutes_errados;
+int quant_de_erros = 0;
 
 int main () {
     SetConsoleOutputCP(CP_UTF8);
@@ -28,13 +29,13 @@ int main () {
 
     palavra_secreta = sortea_palavra();
 
-    while(nao_acertou(palavra_secreta, chutou) && chutes_errados.size() < 5){
+    while(nao_acertou(palavra_secreta, chutou) && quant_de_erros < 5){
 
-        imprime_erros(chutes_errados);
+        imprime_erros(chutes_errados, quant_de_erros);
 
         imprime_palavra(palavra_secreta, chutou);
         
-        chuta (chutou, chutes_errados);
+        chuta (palavra_secreta,chutou, chutes_errados, quant_de_erros);
     }
 
     cout << "Fim de jogo!" << endl;
